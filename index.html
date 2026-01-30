@@ -2,81 +2,80 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Software Applications Menu</title>
+    <title>Software Solutions</title>
     <style>
-        :root {
-            --primary-color: #2563eb;
-            --bg-color: #f8fafc;
-            --text-main: #1e293b;
-            --text-muted: #64748b;
-        }
-
         body {
-            font-family: 'Inter', -apple-system, sans-serif;
-            background-color: var(--bg-color);
-            color: var(--text-main);
+            background-color: #f0f2f5;
+            font-family: 'Segoe UI', sans-serif;
             display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 40px 20px;
+            justify-content: center;
+            padding: 50px 20px;
             margin: 0;
         }
-
-        .header {
-            text-align: center;
-            margin-bottom: 30px;
-        }
-
-        .header h1 { font-size: 2rem; margin-bottom: 10px; color: #0f172a; }
-        .header p { color: var(--text-muted); }
-
-        .menu-container {
+        .card {
             background: white;
             width: 100%;
-            max-width: 500px;
-            padding: 20px;
-            border-radius: 16px;
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
-            transition: all 0.5s ease;
+            max-width: 550px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            padding: 30px;
         }
-
-        .item {
+        h1 { text-align: center; color: #1a73e8; margin-bottom: 20px; }
+        
+        /* The List Styles */
+        .app-list { list-style: none; padding: 0; margin: 0; }
+        .app-item {
             display: flex;
             justify-content: space-between;
-            align-items: center;
             padding: 12px 15px;
-            border-bottom: 1px solid #f1f5f9;
-            transition: background 0.2s;
+            border-bottom: 1px solid #eee;
+            transition: all 0.2s ease;
         }
-
-        .item:last-child { border-bottom: none; }
-        .item:hover { background-color: #f1f5f9; border-radius: 8px; }
-
-        .name { font-weight: 500; font-size: 0.95rem; }
-        .status { 
-            font-size: 0.75rem; 
-            background: #dcfce7; 
-            color: #166534; 
-            padding: 4px 10px; 
-            border-radius: 20px; 
-            font-weight: bold;
-        }
+        .app-item:hover { background: #f8f9fa; }
+        .name { color: #333; font-weight: 500; }
+        .status { color: #28a745; font-size: 0.8rem; font-weight: bold; }
 
         /* THE HOVER TRICK */
-        /* This hides everything after the 5th item */
-        .item:nth-child(n+6) {
+        /* Hide everything after the 5th item */
+        .app-item:nth-child(n+6) {
+            display: none; 
             opacity: 0;
-            max-height: 0;
-            padding: 0;
-            margin: 0;
-            overflow: hidden;
-            border: none;
-            transition: all 0.4s ease;
         }
 
-        /* This reveals them when you hover over the box */
-        .menu-container:hover .item:nth-child(n+6) {
+        /* Show them when the card is hovered */
+        .card:hover .app-item:nth-child(n+6) {
+            display: flex;
             opacity: 1;
-            max-height: 100px;
-            padding:
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            color: #1a73e8;
+            font-size: 0.9rem;
+            font-weight: bold;
+            border-top: 2px dashed #eee;
+            padding-top: 15px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <h1>Available Applications</h1>
+    <div class="app-list">
+        <div class="app-item"><span class="name">Windows All (7-11) AIO 47in1</span><span class="status">READY</span></div>
+        <div class="app-item"><span class="name">Intuit QuickBooks Desktop Pro</span><span class="status">READY</span></div>
+        <div class="app-item"><span class="name">Photoshop 2026</span><span class="status">READY</span></div>
+        <div class="app-item"><span class="name">Ableton Live Suite</span><span class="status">READY</span></div>
+        <div class="app-item"><span class="name">R-Studio (Data recovery)</span><span class="status">READY</span></div>
+
+        <div class="app-item"><span class="name">Microsoft Office 365</span><span class="status">READY</span></div>
+        <div class="app-item"><span class="name">Adobe Creative Cloud</span><span class="status">READY</span></div>
+        <div class="app-item"><span class="name">Intuit QuickBooks</span><span class="status">READY</span></div>
+        <div class="app-item"><span class="name">JetBrains IntelliJ IDEA</span><span class="status">READY</span></div>
+        <div class="app-item"><span class="name">Norton 360</span><span class="status">READY</span></div>
+        <div class="app-item"><span class="name">CorelDRAW Graphics Suite</span><span class="status">READY</span></div>
+        <div class="app-item"><span class="name">Acronis True Image</span><span class="status">READY</span></div>
+        <div class="app-item"><span class="name">Movavi Video Suite</span><span class="status">READY</span></div>
+        <div class="app-item"><span class="name
