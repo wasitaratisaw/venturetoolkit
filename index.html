@@ -2,80 +2,126 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Software Solutions</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Most Popular Requests</title>
     <style>
         body {
-            background-color: #f0f2f5;
-            font-family: 'Segoe UI', sans-serif;
-            display: flex;
-            justify-content: center;
-            padding: 50px 20px;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
             margin: 0;
+            padding: 20px;
         }
-        .card {
-            background: white;
-            width: 100%;
-            max-width: 550px;
-            border-radius: 12px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-            padding: 30px;
-        }
-        h1 { text-align: center; color: #1a73e8; margin-bottom: 20px; }
-        
-        /* The List Styles */
-        .app-list { list-style: none; padding: 0; margin: 0; }
-        .app-item {
-            display: flex;
-            justify-content: space-between;
-            padding: 12px 15px;
-            border-bottom: 1px solid #eee;
-            transition: all 0.2s ease;
-        }
-        .app-item:hover { background: #f8f9fa; }
-        .name { color: #333; font-weight: 500; }
-        .status { color: #28a745; font-size: 0.8rem; font-weight: bold; }
-
-        /* THE HOVER TRICK */
-        /* Hide everything after the 5th item */
-        .app-item:nth-child(n+6) {
-            display: none; 
-            opacity: 0;
-        }
-
-        /* Show them when the card is hovered */
-        .card:hover .app-item:nth-child(n+6) {
-            display: flex;
-            opacity: 1;
-        }
-
-        .footer {
+        h1 {
             text-align: center;
-            margin-top: 20px;
-            color: #1a73e8;
-            font-size: 0.9rem;
-            font-weight: bold;
-            border-top: 2px dashed #eee;
-            padding-top: 15px;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            background: #e9ecef;
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
         }
     </style>
 </head>
 <body>
 
-<div class="card">
-    <h1>Available Applications</h1>
-    <div class="app-list">
-        <div class="app-item"><span class="name">Windows All (7-11) AIO 47in1</span><span class="status">READY</span></div>
-        <div class="app-item"><span class="name">Intuit QuickBooks Desktop Pro</span><span class="status">READY</span></div>
-        <div class="app-item"><span class="name">Photoshop 2026</span><span class="status">READY</span></div>
-        <div class="app-item"><span class="name">Ableton Live Suite</span><span class="status">READY</span></div>
-        <div class="app-item"><span class="name">R-Studio (Data recovery)</span><span class="status">READY</span></div>
+    <div class="container">
+        <h1>Most Popular Requests</h1>
+        <ul>
+            <li>Windows All (7, 8.1, 10, 11) All Editions (x64) With Updates AIO 47in1 January 2026 Pre-Activated</li>
+            <li>Intuit QuickBooks Desktop Pro</li>
+            <li>Photoshop 2026</li>
+            <li>Ableton Live Suite</li>
+            <li>R-Studio (Data recovery software)</li>
+            <li>Microsoft Office 365</li>
+            <li>Adobe Creative Cloud</li>
+            <li>Intuit QuickBooks</li>
+            <li>JetBrains IntelliJ IDEA</li>
+            <li>Norton 360</li>
+            <li>CorelDRAW Graphics Suite</li>
+            <li>Acronis True Image</li>
+            <li>Movavi Video Suite</li>
+            <li>Wondershare Filmora</li>
+            <li>Microsoft Project</li>
+            <li>CleanMyMac</li>
+            <li>Bartender</li>
+            <li>Paste</li>
+            <li>Ulysses</li>
+            <li>CleanShot X</li>
+            <li>Get Backup Pro</li>
+            <li>iBoysoft Data Recovery</li>
+            <li>Sublime Text</li>
+            <li>Sublime Merge</li>
+            <li>Proton VPN</li>
+            <li>Notion</li>
+            <li>Mailchimp</li>
+            <li>Final Cut Pro</li>
+            <li>Photoshop</li>
+            <li>Illustrator</li>
+            <li>Affinity Designer</li>
+            <li>Affinity Photo</li>
+            <li>Sketch</li>
+            <li>Cinema 4D</li>
+            <li>Autodesk AutoCAD</li>
+            <li>Procreate</li>
+            <li>Microsoft Teams</li>
+            <li>Slack</li>
+            <li>GoToMeeting</li>
+            <li>LastPass</li>
+            <li>1Password</li>
+            <li>Bitdefender Total Security</li>
+            <li>Kaspersky Total Security</li>
+            <li>Malwarebytes Premium</li>
+            <li>Acronis Cyber Protect</li>
+            <li>IDrive</li>
+            <li>Backblaze</li>
+            <li>Carbonite</li>
+            <li>Parallels Desktop</li>
+            <li>VMware Fusion</li>
+            <li>Final Draft</li>
+            <li>Camtasia</li>
+            <li>FilmoraPro</li>
+            <li>Ableton Live</li>
+            <li>FL Studio</li>
+            <li>Logic Pro</li>
+            <li>Cubase</li>
+            <li>Microsoft Visual Studio</li>
+            <li>PyCharm</li>
+            <li>Xcode</li>
+            <li>SketchUp Pro</li>
+            <li>SAP ERP</li>
+            <li>Salesforce</li>
+            <li>HubSpot</li>
+            <li>Zoho CRM</li>
+            <li>FreshBooks</li>
+            <li>Asana</li>
+            <li>Smartsheet</li>
+            <li>Microsoft Visio</li>
+            <li>Snagit</li>
+            <li>Figma</li>
+            <li>Adobe XD</li>
+            <li>Affinity Publisher</li>
+            <li>DaVinci Resolve</li>
+            <li>Obsidian</li>
+            <li>Scrivener</li>
+            <li>Dropbox</li>
+            <li>pCloud</li>
+            <li>Microsoft OneDrive</li>
+            <li>Box</li>
+        </ul>
+    </div>
 
-        <div class="app-item"><span class="name">Microsoft Office 365</span><span class="status">READY</span></div>
-        <div class="app-item"><span class="name">Adobe Creative Cloud</span><span class="status">READY</span></div>
-        <div class="app-item"><span class="name">Intuit QuickBooks</span><span class="status">READY</span></div>
-        <div class="app-item"><span class="name">JetBrains IntelliJ IDEA</span><span class="status">READY</span></div>
-        <div class="app-item"><span class="name">Norton 360</span><span class="status">READY</span></div>
-        <div class="app-item"><span class="name">CorelDRAW Graphics Suite</span><span class="status">READY</span></div>
-        <div class="app-item"><span class="name">Acronis True Image</span><span class="status">READY</span></div>
-        <div class="app-item"><span class="name">Movavi Video Suite</span><span class="status">READY</span></div>
-        <div class="app-item"><span class="name
+</body>
+</html>
