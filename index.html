@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Most Popular Requests</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -13,22 +14,25 @@
         }
         h1 {
             text-align: center;
-            color: #333;
+            color: #2c3e50;
             margin-bottom: 20px;
+            font-size: 2.5em;
         }
         p {
             text-align: center;
             color: #555;
             margin-bottom: 20px;
             font-size: 1.2em;
+            font-weight: bold;
         }
         .container {
             max-width: 800px;
             margin: auto;
-            background: white;
+            background: #fff;
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            border-left: 5px solid #3498db;
         }
         ul {
             list-style-type: none;
@@ -39,102 +43,116 @@
             margin: 10px 0;
             padding: 15px;
             border-radius: 8px;
+            display: flex;
+            align-items: center;
             transition: background 0.3s, transform 0.2s;
         }
         li:hover {
             background: #d0e1ff;
             transform: scale(1.02);
         }
+        .icon {
+            margin-right: 10px;
+            color: #3498db;
+            font-size: 1.5em;
+        }
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <h1>All applications for Windows, Mac OS, and Android, available now!</h1>
+        <h1>Most Popular Requests</h1>
         <p>All applications for Windows, Mac OS, and Android, available now!</p>
         <ul>
-            <li>Windows All (7, 8.1, 10, 11) All Editions (x64) With Updates AIO 47in1 January 2026 Pre-Activated</li>
-            <li>Intuit QuickBooks Desktop Pro</li>
-            <li>Photoshop 2026</li>
-            <li>Ableton Live Suite</li>
-            <li>R-Studio (Data recovery software)</li>
-            <li>Microsoft Office 365</li>
-            <li>Adobe Creative Cloud</li>
-            <li>Intuit QuickBooks</li>
-            <li>JetBrains IntelliJ IDEA</li>
-            <li>Norton 360</li>
-            <li>CorelDRAW Graphics Suite</li>
-            <li>Acronis True Image</li>
-            <li>Movavi Video Suite</li>
-            <li>Wondershare Filmora</li>
-            <li>Microsoft Project</li>
-            <li>CleanMyMac</li>
-            <li>Bartender</li>
-            <li>Paste</li>
-            <li>Ulysses</li>
-            <li>CleanShot X</li>
-            <li>Get Backup Pro</li>
-            <li>iBoysoft Data Recovery</li>
-            <li>Sublime Text</li>
-            <li>Sublime Merge</li>
-            <li>Proton VPN</li>
-            <li>Notion</li>
-            <li>Mailchimp</li>
-            <li>Final Cut Pro</li>
-            <li>Photoshop</li>
-            <li>Illustrator</li>
-            <li>Affinity Designer</li>
-            <li>Affinity Photo</li>
-            <li>Sketch</li>
-            <li>Cinema 4D</li>
-            <li>Autodesk AutoCAD</li>
-            <li>Procreate</li>
-            <li>Microsoft Teams</li>
-            <li>Slack</li>
-            <li>GoToMeeting</li>
-            <li>LastPass</li>
-            <li>1Password</li>
-            <li>Bitdefender Total Security</li>
-            <li>Kaspersky Total Security</li>
-            <li>Malwarebytes Premium</li>
-            <li>Acronis Cyber Protect</li>
-            <li>IDrive</li>
-            <li>Backblaze</li>
-            <li>Carbonite</li>
-            <li>Parallels Desktop</li>
-            <li>VMware Fusion</li>
-            <li>Final Draft</li>
-            <li>Camtasia</li>
-            <li>FilmoraPro</li>
-            <li>Ableton Live</li>
-            <li>FL Studio</li>
-            <li>Logic Pro</li>
-            <li>Cubase</li>
-            <li>Microsoft Visual Studio</li>
-            <li>PyCharm</li>
-            <li>Xcode</li>
-            <li>SketchUp Pro</li>
-            <li>SAP ERP</li>
-            <li>Salesforce</li>
-            <li>HubSpot</li>
-            <li>Zoho CRM</li>
-            <li>FreshBooks</li>
-            <li>Asana</li>
-            <li>Smartsheet</li>
-            <li>Microsoft Visio</li>
-            <li>Snagit</li>
-            <li>Figma</li>
-            <li>Adobe XD</li>
-            <li>Affinity Publisher</li>
-            <li>DaVinci Resolve</li>
-            <li>Obsidian</li>
-            <li>Scrivener</li>
-            <li>Dropbox</li>
-            <li>pCloud</li>
-            <li>Microsoft OneDrive</li>
-            <li>Box</li>
+            <li><i class="fas fa-windows icon"></i>Windows All (7, 8.1, 10, 11) All Editions (x64) With Updates AIO 47in1 January 2026 Pre-Activated</li>
+            <li><i class="fas fa-laptop icon"></i>Intuit QuickBooks Desktop Pro</li>
+            <li><i class="fas fa-image icon"></i>Photoshop 2026</li>
+            <li><i class="fas fa-music icon"></i>Ableton Live Suite</li>
+            <li><i class="fas fa-hdd icon"></i>R-Studio (Data recovery software)</li>
+            <li><i class="fas fa-file-word icon"></i>Microsoft Office 365</li>
+            <li><i class="fas fa-cloud icon"></i>Adobe Creative Cloud</li>
+            <li><i class="fas fa-book icon"></i>Intuit QuickBooks</li>
+            <li><i class="fas fa-code icon"></i>JetBrains IntelliJ IDEA</li>
+            <li><i class="fas fa-shield-alt icon"></i>Norton 360</li>
+            <li><i class="fas fa-paint-brush icon"></i>CorelDRAW Graphics Suite</li>
+            <li><i class="fas fa-sync-alt icon"></i>Acronis True Image</li>
+            <li><i class="fas fa-video icon"></i>Movavi Video Suite</li>
+            <li><i class="fas fa-film icon"></i>Wondershare Filmora</li>
+            <li><i class="fas fa-project-diagram icon"></i>Microsoft Project</li>
+            <li><i class="fas fa-apple-alt icon"></i>CleanMyMac</li>
+            <li><i class="fas fa-toolbox icon"></i>Bartender</li>
+            <li><i class="fas fa-copy icon"></i>Paste</li>
+            <li><i class="fas fa-feather-alt icon"></i>Ulysses</li>
+            <li><i class="fas fa-camera-retro icon"></i>CleanShot X</li>
+            <li><i class="fas fa-copy icon"></i>Get Backup Pro</li>
+            <li><i class="fas fa-hdd icon"></i>iBoysoft Data Recovery</li>
+            <li><i class="fas fa-code icon"></i>Sublime Text</li>
+            <li><i class="fas fa-merge icon"></i>Sublime Merge</li>
+            <li><i class="fas fa-shield-alt icon"></i>Proton VPN</li>
+            <li><i class="fas fa-lightbulb icon"></i>Notion</li>
+            <li><i class="fas fa-envelope icon"></i>Mailchimp</li>
+            <li><i class="fas fa-film icon"></i>Final Cut Pro</li>
+            <li><i class="fas fa-image icon"></i>Photoshop</li>
+            <li><i class="fas fa-toolbox icon"></i>Illustrator</li>
+            <li><i class="fas fa-pencil-alt icon"></i>Affinity Designer</li>
+            <li><i class="fas fa-image icon"></i>Affinity Photo</li>
+            <li><i class="fas fa-paint-brush icon"></i>Sketch</li>
+            <li><i class="fas fa-video icon"></i>Cinema 4D</li>
+            <li><i class="fas fa-tools icon"></i>Autodesk AutoCAD</li>
+            <li><i class="fas fa-paint-brush icon"></i>Procreate</li>
+            <li><i class="fas fa-users icon"></i>Microsoft Teams</li>
+            <li><i class="fas fa-comments icon"></i>Slack</li>
+            <li><i class="fas fa-video icon"></i>GoToMeeting</li>
+            <li><i class="fas fa-lock icon"></i>LastPass</li>
+            <li><i class="fas fa-key icon"></i>1Password</li>
+            <li><i class="fas fa-shield-alt icon"></i>Bitdefender Total Security</li>
+            <li><i class="fas fa-shield-alt icon"></i>Kaspersky Total Security</li>
+            <li><i class="fas fa-shield-alt icon"></i>Malwarebytes Premium</li>
+            <li><i class="fas fa-shield-alt icon"></i>Acronis Cyber Protect</li>
+            <li><i class="fas fa-cloud icon"></i>IDrive</li>
+            <li><i class="fas fa-cloud icon"></i>Backblaze</li>
+            <li><i class="fas fa-cloud icon"></i>Carbonite</li>
+            <li><i class="fas fa-desktop icon"></i>Parallels Desktop</li>
+            <li><i class="fas fa-desktop icon"></i>VMware Fusion</li>
+            <li><i class="fas fa-file-alt icon"></i>Final Draft</li>
+            <li><i class="fas fa-video icon"></i>Camtasia</li>
+            <li><i class="fas fa-video icon"></i>FilmoraPro</li>
+            <li><i class="fas fa-music icon"></i>Ableton Live</li>
+            <li><i class="fas fa-music icon"></i>FL Studio</li>
+            <li><i class="fas fa-music icon"></i>Logic Pro</li>
+            <li><i class="fas fa-music icon"></i>Cubase</li>
+            <li><i class="fas fa-code icon"></i>Microsoft Visual Studio</li>
+            <li><i class="fas fa-code icon"></i>PyCharm</li>
+            <li><i class="fas fa-code icon"></i>Xcode</li>
+            <li><i class="fas fa-desktop icon"></i>SketchUp Pro</li>
+            <li><i class="fas fa-industry icon"></i>SAP ERP</li>
+            <li><i class="fas fa-business-time icon"></i>Salesforce</li>
+            <li><i class="fas fa-briefcase icon"></i>HubSpot</li>
+            <li><i class="fas fa-briefcase icon"></i>Zoho CRM</li>
+            <li><i class="fas fa-file-invoice-dollar icon"></i>FreshBooks</li>
+            <li><i class="fas fa-tasks icon"></i>Asana</li>
+            <li><i class="fas fa-thumbs-up icon"></i>Smartsheet</li>
+            <li><i class="fas fa-file-alt icon"></i>Microsoft Visio</li>
+            <li><i class="fas fa-image icon"></i>Snagit</li>
+            <li><i class="fas fa-paint-brush icon"></i>Figma</li>
+            <li><i class="fas fa-paint-brush icon"></i>Adobe XD</li>
+            <li><i class="fas fa-file-alt icon"></i>Affinity Publisher</li>
+            <li><i class="fas fa-video icon"></i>DaVinci Resolve</li>
+            <li><i class="fas fa-pencil-alt icon"></i>Obsidian</li>
+            <li><i class="fas fa-book icon"></i>Scrivener</li>
+            <li><i class="fas fa-cloud-upload-alt icon"></i>Dropbox</li>
+            <li><i class="fas fa-cloud-upload-alt icon"></i>pCloud</li>
+            <li><i class="fas fa-cloud-upload-alt icon"></i>Microsoft OneDrive</li>
+            <li><i class="fas fa-cloud-upload-alt icon"></i>Box</li>
         </ul>
     </div>
-
+    <footer>
+        &copy; 2026 Popular Applications. All Rights Reserved.
+    </footer>
 </body>
 </html>
