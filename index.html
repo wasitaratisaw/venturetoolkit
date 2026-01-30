@@ -16,17 +16,27 @@
         h1 {
             text-align: center;
             color: #2980b9;
-            margin-bottom: 20px;
+            margin-bottom: 10px;
             font-size: 3em;
             text-transform: uppercase;
             letter-spacing: 1px;
             font-weight: bold;
+        }
+        .highlight-text {
+            text-align: center;
+            color: #27ae60;
+            margin-top: 0;
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-bottom: 30px;
         }
         .section-title {
             text-align: center;
             color: #34495e;
             font-size: 2em;
             margin: 40px 0 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
         p {
             text-align: center;
@@ -42,7 +52,6 @@
             padding: 30px;
             border-radius: 15px;
             box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
-            border-left: 10px solid #3498db;
         }
         ul {
             list-style-type: none;
@@ -69,31 +78,6 @@
             color: #3498db;
             font-size: 2em;
         }
-        .request-form {
-            margin-bottom: 30px;
-            padding: 20px;
-            background: #e9f7ef;
-            border: 1px solid #d4edda;
-            border-radius: 8px;
-        }
-        .request-form input, .request-form textarea {
-            width: 100%;
-            margin: 10px 0;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-        .request-form button {
-            background-color: #5cb85c;
-            color: white;
-            border: none;
-            padding: 10px 15px;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        .request-form button:hover {
-            background-color: #4cae4f;
-        }
         footer {
             text-align: center;
             margin-top: 40px;
@@ -106,19 +90,8 @@
 <body>
 
     <div class="container">
-        <h1>Popular Applications & University Courses</h1>
-
-        <p>Explore a diverse array of applications and courses!</p>
-
-        <div class="request-form">
-            <h2>Request More Information</h2>
-            <form action="mailto:support@venturetoolkit.co.uk" method="post" enctype="text/plain">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
-                <button type="submit">Send Request</button>
-            </form>
-        </div>
+        <h1>Everything is Available!</h1>
+        <p>Explore an extensive range of applications and university courses tailored just for you!</p>
 
         <h2 class="section-title">Most Popular Applications</h2>
         <ul>
@@ -164,42 +137,42 @@
             <li><i class="fas fa-lock icon"></i>LastPass</li>
             <li><i class="fas fa-key icon"></i>1Password</li>
             <li><i class="fas fa-shield-alt icon"></i>Bitdefender Total Security</li>
-            <li><i class="fas fa-shield-alt icon"></i>Kaspersky Total Security</li>
-            <li><i class="fas fa-shield-alt icon"></i>Malwarebytes Premium</li>
-            <li><i class="fas fa-shield-alt icon"></i>Acronis Cyber Protect</li>
-            <li><i class="fas fa-cloud icon"></i>IDrive</li>
-            <li><i class="fas fa-cloud icon"></i>Backblaze</li>
-            <li><i class="fas fa-cloud icon"></i>Carbonite</li>
-            <li><i class="fas fa-desktop icon"></i>Parallels Desktop</li>
-            <li><i class="fas fa-desktop icon"></i>VMware Fusion</li>
-            <li><i class="fas fa-file-alt icon"></i>Final Draft</li>
-            <li><i class="fas fa-video icon"></i>Camtasia</li>
-            <li><i class="fas fa-video icon"></i>FilmoraPro</li>
-            <li><i class="fas fa-music icon"></i>Ableton Live</li>
-            <li><i class="fas fa-music icon"></i>FL Studio</li>
-            <li><i class="fas fa-music icon"></i>Logic Pro</li>
-            <li><i class="fas fa-music icon"></i>Cubase</li>
-            <li><i class="fas fa-code icon"></i>Microsoft Visual Studio</li>
-            <li><i class="fas fa-code icon"></i>PyCharm</li>
-            <li><i class="fas fa-code icon"></i>Xcode</li>
-            <li><i class="fas fa-desktop icon"></i>SketchUp Pro</li>
-            <li><i class="fas fa-industry icon"></i>SAP ERP</li>
-            <li><i class="fas fa-business-time icon"></i>Salesforce</li>
-            <li><i class="fas fa-briefcase icon"></i>HubSpot</li>
-            <li><i class="fas fa-briefcase icon"></i>Zoho CRM</li>
-            <li><i class="fas fa-file-invoice-dollar icon"></i>FreshBooks</li>
-            <li><i class="fas fa-tasks icon"></i>Asana</li>
-            <li><i class="fas fa-thumbs-up icon"></i>Smartsheet</li>
-            <li><i class="fas fa-file-alt icon"></i>Microsoft Visio</li>
-            <li><i class="fas fa-image icon"></i>Snagit</li>
-            <li><i class="fas fa-paint-brush icon"></i>Figma</li>
-            <li><i class="fas fa-paint-brush icon"></i>Adobe XD</li>
-            <li><i class="fas fa-file-alt icon"></i>Affinity Publisher</li>
-            <li><i class="fas fa-video icon"></i>DaVinci Resolve</li>
-            <li><i class="fas fa-pencil-alt icon"></i>Obsidian</li>
-            <li><i class="fas fa-book icon"></i>Scrivener</li>
-            <li><i class="fas fa-cloud-upload-alt icon"></i>Dropbox</li>
-            <li><i class="fas fa-cloud-upload-alt icon"></i>pCloud</li>
+            <li><i class="fas fa-shield-alt icon=""></i>Kaspersky Total Security</li>
+            <li><i class="fas fa-shield-alt icon=""></i>Malwarebytes Premium</li>
+            <li><i class="fas fa-shield-alt icon=""></i>Acronis Cyber Protect</li>
+            <li><i class="fas fa-cloud icon=""></i>IDrive</li>
+            <li><i class="fas fa-cloud icon=""></i>Backblaze</li>
+            <li><i class="fas fa-cloud icon=""></i>Carbonite</li>
+            <li><i class="fas fa-desktop icon=""></i>Parallels Desktop</li>
+            <li><i class="fas fa-desktop icon=""></i>VMware Fusion</li>
+            <li><i class="fas fa-file-alt icon=""></i>Final Draft</li>
+            <li><i class="fas fa-video icon=""></i>Camtasia</li>
+            <li><i class="fas fa-video icon=""></i>FilmoraPro</li>
+            <li><i class="fas fa-music icon=""></i>Ableton Live</li>
+            <li><i class="fas fa-music icon=""></i>FL Studio</li>
+            <li><i class="fas fa-music icon=""></i>Logic Pro</li>
+            <li><i class="fas fa-music icon=""></i>Cubase</li>
+            <li><i class="fas fa-code icon=""></i>Microsoft Visual Studio</li>
+            <li><i class="fas fa-code icon=""></i>PyCharm</li>
+            <li><i class="fas fa-code icon=""></i>Xcode</li>
+            <li><i class="fas fa-desktop icon=""></i>SketchUp Pro</li>
+            <li><i class="fas fa-industry icon=""></i>SAP ERP</li>
+            <li><i class="fas fa-business-time icon=""></i>Salesforce</li>
+            <li><i class="fas fa-briefcase icon=""></i>HubSpot</li>
+            <li><i class="fas fa-briefcase icon=""></i>Zoho CRM</li>
+            <li><i class="fas fa-file-invoice-dollar icon=""></i>FreshBooks</li>
+            <li><i class="fas fa-tasks icon=""></i>Asana</li>
+            <li><i class="fas fa-thumbs-up icon=""></i>Smartsheet</li>
+            <li><i class="fas fa-file-alt icon=""></i>Microsoft Visio</li>
+            <li><i class="fas fa-image icon=""></i>Snagit</li>
+            <li><i class="fas fa-paint-brush icon=""></i>Figma</li>
+            <li><i class="fas fa-paint-brush icon=""></i>Adobe XD</li>
+            <li><i class="fas fa-file-alt icon=""></i>Affinity Publisher</li>
+            <li><i class="fas fa-video icon=""></i>DaVinci Resolve</li>
+            <li><i class="fas fa-pencil-alt icon=""></i>Obsidian</li>
+            <li><i class="fas fa-book icon=""></i>Scrivener</li>
+            <li><i class="fas fa-cloud-upload-alt icon=""></i>Dropbox</li>
+            <li><i class="fas fa-cloud-upload-alt icon=""></i>pCloud</li>
             <li><i class="fas fa-cloud-upload-alt icon=""></i>Microsoft OneDrive</li>
             <li><i class="fas fa-cloud-upload-alt icon=""></i>Box</li>
         </ul>
